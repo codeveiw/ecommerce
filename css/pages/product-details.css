@@ -1,0 +1,35 @@
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+}
+header.flex  {
+    background-color: var(--footer-bg);
+    color: #fff;
+    padding-block: 0.6rem;
+&  .fa-solid {
+    color: #fff;
+}  
+&  .logo .fa-solid {
+    font-size: 1.5rem;
+}  
+
+&   .sign-in:hover,
+&   .register:hover {
+    border: 1px solid rgb(152, 154, 189);
+    padding: 0.5rem 1.1rem;
+
+} 
+
+&   .cart:hover {
+    border: 1px solid rgb(152, 154, 189);
+    padding: 0.5rem 1.1rem 0.5rem 0.7rem;
+}
+&   .logo:hover {
+    scale: 0.95;
+}
+}
+main {
+    text-align: center;
+}

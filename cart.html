@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/pages/cart.css">
+   
+</head>
+<body>
+    <header class="flex">
+        <a href="/index.html" class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>AWU</span>
+            <P>Shopping</P>
+        </a>
+        <div class="links">
+            <a class="cart" href=""><i class="fa-solid fa-cart-shopping"></i>
+                $0.00
+                <span class="product-number">3</span>
+            </a>
+            <a class="sign-in" href=""><i class="fa-solid fa-right-to-bracket"></i>Sign in</a>
+            <a class="register" href="" ><i class="fa-solid fa-user-plus"></i>Register</a>
+        </div>
+       </header> 
+
+       <main>
+        <section class="cart">
+            <article class="product flex">
+                <button><i class="fa-solid fa-trash-can"></i></button>
+                <p class="price">$133</p>
+                <div class="flex">
+                    <button class="decrease">-</button>
+                    <p class="quantity flex">3</p>
+                    <button class="increase">+</button>
+                </div>
+                <p class="title">Product Title</p>
+                <img src="./imgs/4.webp" alt="">
+            </article>
+            <article class="product flex">
+                <button><i class="fa-solid fa-trash-can"></i></button>
+                <p class="price">$133</p>
+                <div class="flex">
+                    <button class="decrease">-</button>
+                    <p class="quantity flex">3</p>
+                    <button class="increase">+</button>
+                </div>
+                <p class="title">Product Title</p>
+                <img src="./imgs/5.webp" alt="">
+            </article>
+            <article class="product flex">
+                <button><i class="fa-solid fa-trash-can"></i></button>
+                <p class="price">$133</p>
+                <div class="flex">
+                    <button class="decrease">-</button>
+                    <p class="quantity flex">3</p>
+                    <button class="increase">+</button>
+                </div>
+                <p class="title">Product Title</p>
+                <img src="./imgs/3.webp" alt="">
+            </article>
+        </section>
+        <button class="clear"><i class="fa-solid fa-trash-can"></i>Clear Cart</button>
+        <section class="summary">
+            <h1>Cart Summary</h1>
+            <div class="flex">
+                <p class="subtotal">Subtotal</p>
+                <p>$1999</p>
+
+            </div>
+            <button disabled class="checkout">CHECKOUT</button>
+            <a href="signin.html">Please Sign in to Continue</a>
+        </section>
+       </main>
+
+
+       <footer>
+        Designed and developed by <span>Mohamed Gamal</span>
+        &copy; 2025.
+    </footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+header.flex {
+    justify-content: space-between;
+    padding-inline: 10%;
+    padding-top: 1.2rem;
+
+&   .links .fa-solid{
+    margin-right: 0.5rem;
+}
+& .links .sign-in {
+        margin-inline: 1rem;
+    }
+
+    
+& .links .sign-in,
+& .links .register {
+    border: 1px solid var(--body-font,#2b3445);
+    padding: 0.44rem 1rem;
+    border-radius: 55px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+& .links .sign-in:hover,
+& .links .register:hover, 
+& .links .sign-in:hover .fa-solid,
+& .links .register:hover .fa-solid {
+    background-color: var(--body-font,#2b3445);
+    color: var(--blue,#9fc5ef);
+}
+& .cart {
+    background-color: var(--body-font,#2b3445);
+    color: var(--blue);
+    font-size: 0.9rem;
+    padding: 0.44rem 1.1rem 0.44rem 0.6rem;
+    border-radius: 55px;
+    position: relative;
+}
+& .cart .fa-solid {
+    color: var(--blue);
+   
+}
+
+
+
+& .product-number {
+    position: absolute;
+    background-color: rgb(255, 90, 123);
+    width:20px;
+    height: 20px;
+    top: -5px;
+    right: 0;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+& .logo > span {
+  font-weight: bold;
+}
+
+& .logo > p {
+    letter-spacing: 0.5px;
+}
+}
+
+@media(max-width:600px) {
+
+     header.flex {
+      justify-content: center;
+        padding-inline: 0;
+
+       .links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+
+        }  
+
+        .logo {
+        display: none;
+        } 
+
+    }
+
+}
